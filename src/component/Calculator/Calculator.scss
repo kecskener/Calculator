@@ -1,0 +1,76 @@
+
+.container--calculator{
+    flex-basis: 75%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    &__input{
+        width: 100%;
+        flex-basis: 25%;
+        background-color: #5a5a5a;
+        border: none;
+        font-size: 2.5rem;
+        color: white;
+        padding-left: 2.5rem;
+        font-weight: lighter;
+        &:active,&:focus{
+            border: none;
+        }
+    }
+    &__control{
+        width: 100%;
+        flex-basis: 75%;
+        display: flex;
+        &--left{
+            flex-basis: 75%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            &__button{
+                flex-basis: 35%;
+                height: 10%;
+                display: flex;
+                color: white;
+                font-size: 1.5rem;
+                font-family: monospace;
+                background-color: var(--light);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .2s ease-in;
+                font-weight: bold;
+                &:hover{
+                    background-color: var(--red);
+                    cursor: pointer;
+                }
+            }
+        }
+        &--right{
+            flex-basis: 25%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            &__button{
+                flex-basis: 17.5%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--light);
+                color: white;
+                font-size: 1.5rem;
+                font-family: monospace;
+                font-weight: bold;
+                &:hover{
+                    cursor: pointer;
+                    background-image: linear-gradient(110deg, rgba(196,20,56,1) 0%, rgba(255,175,44,1) 100%);
+                }
+            }
+        }
+    }
+}
